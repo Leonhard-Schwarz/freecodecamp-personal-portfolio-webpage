@@ -271,6 +271,9 @@ footer {
     .button-project-tile {
         color: var(--primary-light);
     }
+    .footer-links a {
+        color: var(--primary-light);
+    }
     .footer-links a img{
         filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7500%) hue-rotate(233deg) brightness(96%) contrast(104%);
     }
