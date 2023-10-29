@@ -1,7 +1,10 @@
 :root {
     --primary: white;
+    --primary-light: #000000;
     --secondary: black;
+    --secondary-light: #ffffff;
     --background: linear-gradient(#000000, #030A17);
+    --background-light: #ffffff;
     --accent: #576C96; 
     --accent-hover: #52648b;
 }
@@ -44,7 +47,6 @@ nav ul {
 }
 
 nav ul li {
-    color: var(--primary);
     list-style: none;
 }
 
@@ -242,4 +244,31 @@ footer {
     flex-direction: row;
     justify-content: center;
    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background: var(--background-light);
+        color: var(--primary-light);
+    }
+    nav {
+        background: var(--secondary-light);
+    }
+    nav ul li a {
+        color: var(--primary-light);
+    }
+    .button-contact-nav {
+        background: var(--primary-light);
+        color: var(--secondary-light);
+    }
+    .button-contact {
+        background: var(--primary-light);
+        color: var(--secondary-light);
+    }
+    .button-project-tile {
+        color: var(--primary-light);
+    }
+    .footer-links a {
+        color: var(--primary-light);
+    }
 }
