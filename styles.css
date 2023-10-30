@@ -36,6 +36,7 @@ nav {
     width: 100%;
     background: var(--secondary);
     padding: 20px 10px;
+    z-index: 1;
 }
 
 nav ul {
@@ -91,7 +92,7 @@ main {
 }
 
 .section-welcome h1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
     text-align: center;
     text-wrap: balance
 }
@@ -99,11 +100,13 @@ main {
 .section-welcome p {
     font-size: 1.5rem;
     text-align: center;
+    opacity: 70%;
 }
 
 .buttons {
     display: flex;
-    gap: 1.5rem;
+    margin-top: 1rem;
+    gap: 1rem;
 }
 
 .button-contact {
@@ -161,7 +164,8 @@ main {
 .project-tile img {
     display: flex;
     flex-direction: column;
-    border: 1px solid gray;
+    width: 100%;
+    border: 3px solid rgba(255, 255, 255, 0.40);
     border-radius: 15px 15px 0 0;
 }
 
@@ -169,23 +173,45 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 1rem;
-    border: 1px solid gray;
+    padding: 1rem 1.2rem 2rem 1.2rem;
+    border: 3px solid rgba(255, 255, 255, 0.40);
+    border-top: none;
     border-radius: 0 0 15px 15px;
 }
 
+.project-tile-text p {
+    opacity: 70%;
+    line-height: 160%;
+}
+
 .project-tile .buttons {
+    margin-top: 1rem;
     gap: 1rem;
 }
 
-.button-project-tile {
+.project-tile .buttons a {
     padding: 0.4rem 2rem 0.6rem 2rem;
-    border: 3px solid gray;
+    border: 3px solid rgba(255, 255, 255, 0.40);
     border-radius: 10px;
     font-size: 1.1rem;
     font-weight: bold;
     text-decoration: none;
     color: var(--primary);
+    width: 45%;
+    text-align: center;
+}
+
+.projects-text {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 1.2rem;
+    opacity: 70%;
+}
+
+.projects-text a{
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
 }
 
 footer {
@@ -265,11 +291,28 @@ footer {
         background: var(--primary-light);
         color: var(--secondary-light);
     }
+    .button-contact-nav:hover {
+        opacity: 90%;
+    }
     .button-contact {
         background: var(--primary-light);
         color: var(--secondary-light);
     }
-    .button-project-tile {
+    .button-contact:hover {
+        opacity: 90%;
+    }
+    .project-tile img {
+        border: 3px solid rgba(0, 0, 0, 0.4);
+    }
+    .project-tile-text {
+        border: 3px solid rgba(0, 0, 0, 0.4);
+        border-top: none;
+    }
+    .project-tile .buttons a {
+        color: var(--primary-light);
+        border: 3px solid rgba(0, 0, 0, 0.4);
+    }
+    .projects-text a {
         color: var(--primary-light);
     }
     .footer-links a {
